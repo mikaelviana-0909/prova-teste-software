@@ -9,7 +9,7 @@ test("Simulando Conta Negativa", () => {
 });
 
 test("Simulando Saldo Positivo", () => {
-  const bancoMock = {
+  const banco = {
     buscarSaldo: vi.fn()
   };
   expect(consultarSaldo(123, banco)).toBe("Saldo: R$ 750"); 
